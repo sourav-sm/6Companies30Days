@@ -1,22 +1,22 @@
 //168. Excel Sheet Column Title
 //problem link https://leetcode.com/problems/excel-sheet-column-title/description/
 
-// class Solution {
-// public:
-//     string convertToTitle(int columnNumber) {
-//         string ans="";
+class Solution {
+public:
+    string convertToTitle(int columnNumber) {
+        string ans="";
 
-//         while(columnNumber){
-//             columnNumber--;//to match ascaii value
-//             int rem=columnNumber%26;
-//             char ch=rem+'A';
-//             ans.push_back(ch);
-//             columnNumber/=26;
-//         }
-//         reverse(ans.begin(),ans.end());
-//         return ans;
-//     }
-// };
+        while(columnNumber){
+            columnNumber--;//to match ascaii value
+            int rem=columnNumber%26;
+            char ch=rem+'A';
+            ans.push_back(ch);
+            columnNumber/=26;
+        }
+        reverse(ans.begin(),ans.end());
+        return ans;
+    }
+};
 
 //GFG Nuts and Bolts Problem
 //https://www.geeksforgeeks.org/problems/nuts-and-bolts-problem0431/0
